@@ -10,6 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        initView()
+    }
+
+    private fun initView() {
         btn_changetext.setOnClickListener{
             txv_hello.text = "Hello Kotlin !"
         }
